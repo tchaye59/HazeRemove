@@ -48,7 +48,7 @@ public class DarkChannelPriorDehaze {
 		Core.divide(gray, new Scalar(255.0), gray);
 		// refine transmission map
 		int r = krnlSz * 4;
-//		t = Filters.GuidedImageFilter(gray, t, r, eps);
+		t = Filters.GuidedImageFilter(gray, t, r, eps);
 		// get minimum atmospheric light
 		minAtmosLight = Math.min(minAtmosLight, Core.minMaxLoc(dc).maxVal);
 		// dehaze each color channel

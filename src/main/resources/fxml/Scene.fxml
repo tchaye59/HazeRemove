@@ -18,7 +18,7 @@
          <top>
             <FlowPane alignment="CENTER" styleClass="bigBlue" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="45.0" prefWidth="131.0" text="Haze Removal" wrapText="true">
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="208.0" text="BIT : Haze Removal" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -57,12 +57,12 @@
          <bottom>
             <VBox alignment="CENTER" prefHeight="94.0" prefWidth="715.0" spacing="20.0" styleClass="bigBlue" BorderPane.alignment="CENTER">
                <children>
-                  <Label fx:id="lblFileName" text="..." />
+                  <Label fx:id="lblFileName" alignment="CENTER" text="..." textFill="#e7ff0b" wrapText="true" />
                   <Button fx:id="btn_upload" mnemonicParsing="false" onAction="#processImageHandler" prefHeight="30.0" prefWidth="240.0" text="Upload Image">
                      <graphic>
                         <ImageView>
                            <image>
-                              <Image url="@../../../../../ms/cei/cei-clientfx/src/main/resources/img/up_16.png" />
+                              <Image url="@../image/up_16.png" />
                            </image>
                         </ImageView>
                      </graphic>
